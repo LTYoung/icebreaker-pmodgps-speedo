@@ -1,0 +1,60 @@
+TOP.top_testbench.cg with cycle_time_p          10
+
+████████╗███████╗███████╗████████╗██████╗ ███████╗███╗   ██╗ ██████╗██╗  ██╗    ████████╗ ██████╗ ██████╗ 
+╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝██╔══██╗██╔════╝████╗  ██║██╔════╝██║  ██║    ╚══██╔══╝██╔═══██╗██╔══██╗
+██║   █████╗  ███████╗   ██║   ██████╔╝█████╗  ██╔██╗ ██║██║     ███████║       ██║   ██║   ██║██████╔╝
+██║   ██╔══╝  ╚════██║   ██║   ██╔══██╗██╔══╝  ██║╚██╗██║██║     ██╔══██║       ██║   ██║   ██║██╔═══╝ 
+██║   ███████╗███████║   ██║   ██████╔╝███████╗██║ ╚████║╚██████╗██║  ██║       ██║   ╚██████╔╝██║     
+╚═╝   ╚══════╝╚══════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═══╝ ╚═════╝╚═╝  ╚═╝       ╚═╝    ╚═════╝ ╚═╝     
+__________ ___________  _______________________________
+\______   \\_   _____/ /   _____/\_   _____/\__    ___/
+ |       _/ |    __)_  \_____  \  |    __)_   |    |   
+ |    |   \ |        \ /        \ |        \  |    |  0->1 time =         10
+ |____|_  //_______  //_______  //_______  /  |____|   
+ ASYNC  \/         \/         \/         \/            
+Reset complete
+
+Starting simulation
+
+__________ ___________  _______________________________
+\______   \\_   _____/ /   _____/\_   _____/\__    ___/
+ |       _/ |    __)_  \_____  \  |    __)_   |    |   
+ |    |   \ |        \ /        \ |        \  |    |  1->0 time =        110
+ |____|_  //_______  //_______  //_______  /  |____|   
+ ASYNC  \/         \/         \/         \/            
+Power up, wait for gps power up
+GPS power up, generating threedf at 0.5hz
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Lost fix, generating threedf at 0.5hz
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Got fix, generating onepps at 1hz for 10pct duty cycle
+Simulating UART WRITE
+- top_testbench.sv:165: Verilog $finish
