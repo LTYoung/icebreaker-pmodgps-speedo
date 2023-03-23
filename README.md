@@ -59,20 +59,24 @@ The repository has the following file structure:
 
 ## Working with this repo
 
-In order to synth and build for the FPGA, the top module has to be defined in Makefile in source.
+As of current, in order to synth and build for the FPGA, the top module defination has to be changed in Makefile in source depends on what you want to do.
 To build:
-- make prog
+1. Go to rtl/source
+2. Make sure in Makefile, TOP_MODULE is set as "speedo"
+2. make prog
 
 To run individual testbenches, double check in simulation.mk that a testbench is defined for a module.
 To run testbench:
-- make test_<Module Name>
+1. Go to rtl/source
+2. Make sure in Makefile, TOP_MODULE is set as "top"
+3. make test_<Module Name>
 You can modify simulation.mk to add more testbenches as desired.
 
 ## Some Caveats
 
-- The configuration command provided by Digilent, which is used by gpsconfig.ino, seems to be partially incorrect. The script is able to make the GPS change its baud rate to 38.4k, but the command to change refresh rate seems to be invalid
+- The configuration command provided by Digilent, which is used by gpsconfig.ino, seems to be partially incorrect. The script is able to make the GPS change its baud rate to 38.4k, but the command to change refresh rate seems to be invalid. These command are from GlobalTop's Firmware Customization Service, which is not accessible as of now.
 - With the GPS on 1Hz, the performance of the speedo is slugish and the Kalman Filter have a hard time even with very high convariance martix.
-- Requires 4MHz clock as of current. More pipeline stages should enable a faster clock.
+- Requires 4MHz clock as of current. More pipeline stages should enable a faster clock. Or you can change how the clock is set in rtl/provide_modules/icebreaker.pcf and rtl/fpga.mk
 
 ## Code Used
 - UART interface based on: https://github.com/medalotte/SystemVerilog-UART 
