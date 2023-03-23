@@ -68,8 +68,13 @@ To run testbench:
 - make test_<Module Name>
 You can modify simulation.mk to add more testbenches as desired.
 
-## Some caveats
+## Some Caveats
 
 - The configuration command provided by Digilent, which is used by gpsconfig.ino, seems to be partially incorrect. The script is able to make the GPS change its baud rate to 38.4k, but the command to change refresh rate seems to be invalid
 - With the GPS on 1Hz, the performance of the speedo is slugish and the Kalman Filter have a hard time even with very high convariance martix.
 - Requires 4MHz clock as of current. More pipeline stages should enable a faster clock.
+
+## Code Used
+- UART interface based on: https://github.com/medalotte/SystemVerilog-UART 
+## Appendix
+Special thanks to Dustin Richmond, Priyanka Dutta, and Bhawandeep Sigh Harsh for their assistant through the course for me to complete this project.
